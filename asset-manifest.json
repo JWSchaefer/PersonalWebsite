@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jwschaefer.github.io/static/css/main.334ca55a.css",
+    "main.js": "/jwschaefer.github.io/static/js/main.bd96ab00.js",
+    "static/js/787.392ff83a.chunk.js": "/jwschaefer.github.io/static/js/787.392ff83a.chunk.js",
+    "index.html": "/jwschaefer.github.io/index.html",
+    "main.334ca55a.css.map": "/jwschaefer.github.io/static/css/main.334ca55a.css.map",
+    "main.bd96ab00.js.map": "/jwschaefer.github.io/static/js/main.bd96ab00.js.map",
+    "787.392ff83a.chunk.js.map": "/jwschaefer.github.io/static/js/787.392ff83a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.334ca55a.css",
+    "static/js/main.bd96ab00.js"
+  ]
+}
