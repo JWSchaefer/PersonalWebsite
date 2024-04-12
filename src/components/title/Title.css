@@ -1,0 +1,24 @@
+
+.Title {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+.TitleBar{
+    grid-row: 1  ;
+    grid-column: 1/3 ;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 30em;
+    padding-left: 2em;
+}
+
+.PageTitle{
+    margin-left: 12pt;
+    padding: 0;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 3.5em;
+    font-weight: 200;
+}

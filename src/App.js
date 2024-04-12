@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 
+
+import Title from './components/title/Title';
+import PageTitle from './components/page_title/PageTitle';
+import Menu from './components/menu/Menu';
+import Body from './components/body/Body';
+
+import { useState } from 'react';
+
+
 function App() {
+
+  const [theme, setTheme] = useState("dark");
+
+  const togleTheme = () => {
+    setTheme((t) => t === "dark" ? "light" : "dark")
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id={theme}>
+      <div className='GridContainer'>
+        <Title></Title>
+        <PageTitle pageTitle={"Home"}></PageTitle>
+        <Menu></Menu>
+        <Body></Body>
+      </div>
     </div>
   );
 }

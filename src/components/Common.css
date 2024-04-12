@@ -1,0 +1,13 @@
+
+
+.Subtitle {
+    font-size: 1.8em;
+    font-weight: 250;
+}
+
+.Inset{
+    border-radius:5px;
+    background-color: var(--bg-inset);
+}
+
+

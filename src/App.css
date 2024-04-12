@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+:root {
+  color-scheme: light dark;
+  --base03 : #002b36;
+  --base02 : #073642;
+  --base01 : #586e75;
+  --base00 : #65738b;
+  --base0  : #839496;
+  --base1  : #93a1a1;
+  --base2  : #eee8d5;
+  --base3  : #fdf6e3;
+
+  --yellow  :#b58900;
+  --orange  :#cb4b16;
+  --red     :#dc322f;
+  --magenta :#d33682;
+  --violet  :#6c71c4;
+  --blue    :#268bd2;
+  --cyan    :#2aa198;
+  --green   :#859900;
+
+  --bg-light : var(--base3);
+  --bg-dark  : var(--base02);
+
+  --primary-text-light : var(--base02);
+  --primary-text-dark  : var(--base2);
+
+  --bg-inset-light: var(--base2);
+  --bg-inset-dark  : var(--base03);
+
+  /* --sidebar-width : 20em; */
+  --sidebar-width : 30em;
+  --topbar-height : 6em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#light, html, body{
+
+  --bg : var(--bg-light);
+  --bg-inset : var(--bg-inset-light);
+  --text :  var(--primary-text-light) ;
+
+  background-color: var(--bg) ;
+  color: var(--text);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#dark, html, body{
+
+  --bg : var(--bg-dark);
+  --bg-inset : var(--bg-inset-dark);
+  --text :  var(--primary-text-dark) ;
+
+  background-color: var(--bg) ;
+  color: var(--text);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.digi{
+  font-family:'Exo 2';
+  font-weight:200;
 }
 
-.App-link {
-  color: #61dafb;
+
+body, .App{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background) ;
+  padding:0;
+  margin: 0;
+  font-size: 12pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.GridContainer {
+  display: grid;
+
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--bg);
+
+  grid-template-rows: var(--topbar-height)  calc(100vh - var(--topbar-height)); 
+  grid-template-columns : var(--sidebar-width) calc(100vw - var(--sidebar-width));
 }
+

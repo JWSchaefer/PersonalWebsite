@@ -1,0 +1,75 @@
+.MenuParent{
+    grid-row: 2;
+    grid-column: 1;
+    margin-right: auto;
+    margin-bottom: auto;
+    display:flex;
+    flex-direction : column;
+    padding-top:0.25em;
+    padding-bottom:0.25em;
+    width : auto;
+    margin-left: 2em;
+    margin-right: 1em;
+    transition:all 1s;
+}
+
+.MenuChild{
+  display : Flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:1em;
+  padding-right:1em;
+  font-family:"Fira Code";
+  background-color: transparent;
+  font-size : 16pt;   
+  border-style: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.DropDownChild{
+  padding-top: 0;
+  padding-left:2em;
+} 
+
+.DropArrow{
+  transition:all 1s;
+}
+
+.DropArrowRight{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transition:all 1s;
+}
+
+.Page{
+  color:var(--green);
+}
+
+.Link{
+  color:var(--blue);
+}
+
+.Dir{
+  color:var(--yellow);
+}
+
+.Info{
+  color:var(--orange);
+}
+
+.Demo {
+  color : var(--cyan);
+}
+
+.MenuIcon{
+  margin-left: auto;
+}
+
+.Download{
+  color:var(--magenta);
+}
