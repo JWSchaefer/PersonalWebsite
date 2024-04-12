@@ -1,7 +1,7 @@
 {
   "name": "web-js",
   "version": "0.1.0",
-  "homepage":"jwschaefer.github.io",
+  "homepage": "https://JWSchaefer.github.io/jwschaefer.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
