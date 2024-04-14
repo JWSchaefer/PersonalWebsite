@@ -22,11 +22,11 @@ class Menu extends Component {
   render() {
     return <div class="MenuParent Inset">
       <div class="MenuChild Page">
-        Home.page<CottageOutlinedIcon fontSize="medum" className="MenuIcon"></CottageOutlinedIcon>
+        Home.page<CottageOutlinedIcon fontSize="small" className="MenuIcon"></CottageOutlinedIcon>
       </div>
 
       <div class="MenuChild Page">
-      Projects.page<CodeOutlinedIcon fontSize="medum" className="MenuIcon"></CodeOutlinedIcon>
+      Projects.page<CodeOutlinedIcon fontSize='small' className='MenuIcon'></CodeOutlinedIcon>
       </div>
 
       <Dropdown name="Demos" items={[
@@ -35,20 +35,20 @@ class Menu extends Component {
       ]} />
 
       <div class="MenuChild Download"> 
-      CV.pdf<InsertDriveFileOutlinedIcon fontSize='medium' className='MenuIcon'></InsertDriveFileOutlinedIcon>
+      CV.pdf<InsertDriveFileOutlinedIcon fontSize='small' className='MenuIcon'></InsertDriveFileOutlinedIcon>
       </div>
 
       <div class="MenuChild Link"> 
-      Linkedin.href<LinkedInIcon fontSize='medium' className='MenuIcon'></LinkedInIcon>
+      Linkedin.href<LinkedInIcon fontSize='small' className='MenuIcon'></LinkedInIcon>
       </div>
 
       <div class="MenuChild Link"> 
-      Github.href<GitHubIcon  fontSize='medium' className='MenuIcon'></GitHubIcon>
+      Github.href<GitHubIcon  fontSize='small' className='MenuIcon'></GitHubIcon>
       </div>
 
 
       <div class="MenuChild Info">
-        Contact.info<InfoOutlinedIcon fontSize='medium' className='MenuIcon'></InfoOutlinedIcon>
+        Contact.info<InfoOutlinedIcon fontSize='small' className='MenuIcon'></InfoOutlinedIcon>
         </div>
     </div>
   }

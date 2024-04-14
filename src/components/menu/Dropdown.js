@@ -41,7 +41,7 @@ function Dropdown({name, items}) {
     <div className="MenuChild Dir " onClick={onClick}>
       <ArrowForwardIosOutlinedIcon fontSize='small' style={{transform: expanded ? '' : 'rotate(90deg)', transition: 'transform 200ms ease'}}></ArrowForwardIosOutlinedIcon>
       &thinsp;{name}
-      <MenuOutlinedIcon fontSize='medium' className='MenuIcon'>
+      <MenuOutlinedIcon fontSize='small' className='MenuIcon'>
       </MenuOutlinedIcon>
     </div>
     {expanded ? null : items.map((item) => Item(item))}

@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className='GridContainer'>
         <Title></Title>
-        <PageTitle pageTitle={"Home"}></PageTitle>
+        <PageTitle pageTitle={""}></PageTitle>
         <Menu></Menu>
         <Body></Body>
     </div>

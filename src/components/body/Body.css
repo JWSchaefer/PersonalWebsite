@@ -6,3 +6,10 @@
     margin-left: 0;
     width:auto;
 }
+
+.Body{
+    font-family: 'DM Sans';
+    font-size: 32pt;
+    margin:auto;
+    margin-top: 2em;
+}
