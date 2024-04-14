@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/jwschaefer.github.io/static/css/main.334ca55a.css",
-    "main.js": "/jwschaefer.github.io/static/js/main.dff553c4.js",
-    "index.html": "/jwschaefer.github.io/index.html",
-    "main.334ca55a.css.map": "/jwschaefer.github.io/static/css/main.334ca55a.css.map",
-    "main.dff553c4.js.map": "/jwschaefer.github.io/static/js/main.dff553c4.js.map"
+    "main.css": "/static/css/main.334ca55a.css",
+    "main.js": "/static/js/main.dff553c4.js",
+    "index.html": "/index.html",
+    "main.334ca55a.css.map": "/static/css/main.334ca55a.css.map",
+    "main.dff553c4.js.map": "/static/js/main.dff553c4.js.map"
   },
   "entrypoints": [
     "static/css/main.334ca55a.css",
