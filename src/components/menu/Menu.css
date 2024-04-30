@@ -29,6 +29,17 @@
   width: auto;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  padding: None;
+  margin: None;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .DropDownChild{
   padding-top: 0;
   padding-left:2em;

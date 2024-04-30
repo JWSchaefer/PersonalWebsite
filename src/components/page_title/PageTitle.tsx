@@ -3,10 +3,13 @@ import './PageTitle.css'
 
 import React, { Component } from 'react';
 
+export interface PageTitleProps {
+  title: string;
+}
 
-function PageTitle({pageTitle}) {
+function PageTitle({ title } : PageTitleProps) {
   return <div className='PageTitle'>
-      <span>{pageTitle}</span>
+      <span>{title}</span>
     </div>
 }
 

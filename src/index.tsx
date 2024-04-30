@@ -5,7 +5,9 @@ import App from './App';
 
 import { HashRouter as Router } from "react-router-dom";
 
+// @ts-ignore
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <Router>
     <App />

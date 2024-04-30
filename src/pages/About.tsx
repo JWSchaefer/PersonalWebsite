@@ -1,20 +1,22 @@
+import React from 'react';
+
 import Title from '../components/title/Title';
 import PageTitle from '../components/page_title/PageTitle';
 import Menu from '../components/menu/Menu';
-import Body from '../components/body/Body';
+// import Body from '../components/body/Body';
 
 
 
-function Home() {
+function About() {
 
   return (
     <div className='GridContainer'>
         <Title></Title>
-        <PageTitle pageTitle={"Home"}></PageTitle>
+        <PageTitle title={"About"}></PageTitle>
         <Menu></Menu>
-        <Body></Body>
+        {/* <Body></Body> */}
     </div>
   );
 }
 
-export default Home;
+export default About;

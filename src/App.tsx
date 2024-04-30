@@ -1,10 +1,11 @@
 import './App.css';
 
 import Home from './pages/Home';
+import About from './pages/About';
+
 
 import { Routes, Route} from "react-router-dom";
-import { useState } from 'react';
-
+import React, { useState } from 'react';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <div className="App" id={theme}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
     
