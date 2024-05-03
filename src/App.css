@@ -27,8 +27,8 @@
   --bg-inset-light: var(--base2);
   --bg-inset-dark  : var(--base03);
 
-  /* --sidebar-width : 20em; */
-  --sidebar-width : 18vw;
+  --sidebar-width : 25em;
+  /* --sidebar-width : 18vw; */
   --topbar-height : 6em;
 }
 
