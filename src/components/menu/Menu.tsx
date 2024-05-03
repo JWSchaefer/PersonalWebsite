@@ -4,10 +4,22 @@ import './Menu.css';
 import Dropdown from './Dropdown';
 
 import React, { Component } from 'react';
-import { CottageOutlined as CottageOutlinedIcon, CodeOutlined as CodeOutlinedIcon, InsertDriveFileOutlined as InsertDriveFileOutlinedIcon, LinkedIn as LinkedInIcon, GitHub as GitHubIcon, InfoOutlined as InfoOutlinedIcon } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+import { 
+  CottageOutlined as CottageOutlinedIcon, 
+  CodeOutlined as CodeOutlinedIcon, 
+  InsertDriveFileOutlined as InsertDriveFileOutlinedIcon, 
+  LinkedIn as LinkedInIcon, 
+  GitHub as GitHubIcon, 
+  InfoOutlined as InfoOutlinedIcon,
+  LocalPhoneOutlined
+} from '@mui/icons-material';
+
 import { Linkedin, Codesandbox } from 'react-feather';
 
 import { linkedinAddress, githubAddress } from '../../constant/addresses';
+
+
 
 export interface SubMenuRow {
   rowTitle: string;
@@ -18,9 +30,18 @@ class Menu extends Component {
   render() {
     return (
       <div className="MenuParent Inset">
-        <div className="MenuChild Page">
+
+        <Link to='/'><div className="MenuChild Page">
           Home.page<CottageOutlinedIcon fontSize="medium" className="MenuIcon" />
-        </div>
+        </div></Link>
+
+        <Link to='/about'><div className="MenuChild About">
+          About.me<InfoOutlinedIcon fontSize="medium" className="MenuIcon" />
+        </div></Link>
+
+        <Link to='/'><div className="MenuChild Page">
+          Projects.page<CodeOutlinedIcon fontSize="medium" className="MenuIcon" />
+        </div></Link>
 
         <div className="MenuChild Page">
           Projects.page<CodeOutlinedIcon fontSize="medium" className="MenuIcon" />
@@ -48,7 +69,7 @@ class Menu extends Component {
         </a>
 
         <div className="MenuChild Info">
-          Contact.info<InfoOutlinedIcon fontSize='medium' className='MenuIcon' />
+          Contact.info<LocalPhoneOutlined fontSize='medium' className='MenuIcon' />
         </div>
       </div>
     );

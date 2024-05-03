@@ -36,10 +36,6 @@ a {
   margin: None;
 }
 
-a:visited {
-  color: inherit;
-}
-
 .DropDownChild{
   padding-top: 0;
   padding-left:2em;
@@ -81,6 +77,10 @@ a:visited {
   margin-left: auto;
 }
 
-.Download{
+.About{
   color:var(--magenta);
+}
+
+.Download{
+  color:var(--violet);
 }
