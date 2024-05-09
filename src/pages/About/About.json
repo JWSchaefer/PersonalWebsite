@@ -1,0 +1,38 @@
+{
+    "PageTitle" : "About Me",
+    "Intro" : [
+
+        "I am an Engineer, Computer Scientist, and Sportsman.",
+        "In 2023, I recieved my Masters of Engineering from the University of Southampton"
+    ],
+
+    "TimeLine" : [
+
+        {
+            "Organisation":"digiLab",
+            "Role":"Resarch & Development Graduate",
+            "Start":"October 2023",
+            "End":"Present",
+            "City":"Exeter",
+            "Country":"UK"
+        },
+
+        {
+            "Organisation":"University of Southampton",
+            "Role":"Research Intern",
+            "Start":"July 2022",
+            "End":"September 2023 ",
+            "City":"Southampton",
+            "Country":"UK"
+        },
+
+        {
+            "Organisation":"University of Southampton",
+            "Role":"MEng Aeronautical and Astronautical Engineering",
+            "Start":"September 2019",
+            "End":"June 2023 ",
+            "City":"Southampton",
+            "Country":"UK"
+        }
+    ]
+}

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import '../Common.css';
-import './Menu.css';
-import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
-import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import "./Menu.css";
 
-import { SubMenuRow } from './Menu';
+import React, { useState } from "react";
+import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+
+import { SubMenuRow } from "./Menu";
 
 interface DynamicIconProps {
   dynamicIconName: string;
@@ -18,8 +18,8 @@ interface DropdownProps {
 
 function DynamicIcon({ dynamicIconName }: DynamicIconProps) {
   switch (dynamicIconName) {
-    case 'Demo':
-      return <TerminalOutlinedIcon className='MenuIcon' />;
+    case "Demo":
+      return <TerminalOutlinedIcon fontSize="small" className="MenuIcon" />;
     default:
       return null; // or any default component
   }
@@ -35,7 +35,6 @@ function DynamicRow({ rowTitle, rowIconName }: SubMenuRow) {
 
 function Dropdown({ dropdownName, dropdownItems }: DropdownProps) {
   const [expanded, setExpanded] = useState(true);
-
   const onClick = () => {
     setExpanded(!expanded);
   };
@@ -44,13 +43,18 @@ function Dropdown({ dropdownName, dropdownItems }: DropdownProps) {
     <>
       <div className="MenuChild Dir" onClick={onClick}>
         <ArrowForwardIosOutlinedIcon
-          fontSize='small'
-          style={{ transform: expanded ? '' : 'rotate(90deg)', transition: 'transform 200ms ease' }}
+          fontSize="small"
+          style={{
+            transform: expanded ? "" : "rotate(90deg)",
+            transition: "transform 200ms ease",
+          }}
         />
         &thinsp;{dropdownName}
-        <MenuOutlinedIcon fontSize='medium' className='MenuIcon' />
+        <MenuOutlinedIcon fontSize="small" className="MenuIcon" />
       </div>
-      {expanded ? null : dropdownItems.map((dropdownItem) => DynamicRow(dropdownItem))}
+      {expanded
+        ? null
+        : dropdownItems.map((dropdownItem) => DynamicRow(dropdownItem))}
     </>
   );
 }

@@ -1,20 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Title from '../components/title/Title';
-import PageTitle from '../components/page_title/PageTitle';
-import Menu from '../components/menu/Menu';
-// import Body from '../components/body/Body';
-
-import { PageTitleProps } from '../components/page_title/PageTitle';
+import Title from "../components/title/Title";
+import Menu from "../components/menu/Menu";
 
 function Home() {
-
   return (
-    <div className='GridContainer'>
-        <Title></Title>
-        <PageTitle title={"Home"}></PageTitle>
-        <Menu></Menu>
-        {/* <Body></Body> */}
+    <div className="GridContainer">
+      <Title></Title>
+      <Menu></Menu>
     </div>
   );
 }

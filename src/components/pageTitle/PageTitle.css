@@ -1,0 +1,10 @@
+.PageTitleBar{
+    height: var(--topbar-height);
+    display: flex;
+    align-items: center;
+}
+
+.PageTitle {
+    font-size: 32pt;
+    font-weight: 200;
+}

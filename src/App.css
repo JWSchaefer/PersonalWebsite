@@ -27,9 +27,12 @@
   --bg-inset-light: var(--base2);
   --bg-inset-dark  : var(--base03);
 
-  --sidebar-width : 25em;
+  --sidebar-width : 18.75em;
   /* --sidebar-width : 18vw; */
   --topbar-height : 6em;
+
+  --wall-padding : 2em;
+  --grid-gap: 1em;
 }
 
 #light, html, body{

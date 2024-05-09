@@ -8,9 +8,8 @@
     padding-top:0.25em;
     padding-bottom:0.25em;
     width : auto;
-    margin-left: 2em;
-    margin-right: 1em;
-    transition:all 1s;
+    margin-left: var(--wall-padding);
+    margin-right: calc(var(--grid-gap) / 2);
 }
 
 .MenuChild{
@@ -23,7 +22,7 @@
   padding-right:1em;
   font-family:"Fira Code";
   background-color: transparent;
-  font-size : 16pt;   
+  font-size : 14pt;   
   border-style: none;
   cursor: pointer;
   width: auto;
@@ -38,7 +37,7 @@ a {
 
 .DropDownChild{
   padding-top: 0;
-  padding-left:2em;
+  /* padding-left:2em; */
 } 
 
 .DropArrow{
@@ -65,9 +64,6 @@ a {
   color:var(--yellow);
 }
 
-.Info{
-  color:var(--orange);
-}
 
 .Demo {
   color : var(--cyan);
@@ -78,7 +74,7 @@ a {
 }
 
 .About{
-  color:var(--magenta);
+  color:var(--orange);
 }
 
 .Download{
